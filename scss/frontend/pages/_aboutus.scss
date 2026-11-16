@@ -1,0 +1,235 @@
+.content__section {
+    padding: 7rem 0;
+
+    .intro__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+        @media(max-width:$breakpoint-mobile) {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .intro__info {
+            h2 {
+                margin-bottom: 2rem;
+            }
+
+            flex: 1;
+        }
+
+        .intro__img {
+            flex: 1;
+
+            figure {
+                margin: 0;
+
+                img {
+                    width: 100%;
+                    border-radius: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+.vidhypro__intro {
+    background-color: #fff;
+    padding: 5rem;
+    border-radius: 2.4rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @media(max-width:$breakpoint-mobile) {
+        .section-heading {
+            margin: 0;
+        }
+    }
+}
+
+.mission__vision {
+    .intro__wrapper {
+        @media(max-width:$breakpoint-mobile) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        margin-top: 3rem;
+
+        li {
+            border-radius: 2rem;
+            padding: 2rem;
+            flex: 1;
+
+            h4 {
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                margin: 0;
+            }
+
+        }
+
+        .mission {
+            background: $dark-green;
+
+            h4 {
+                color: $text__color2;
+            }
+
+            p {
+                color: $text__color2;
+            }
+
+        }
+
+        .vision {
+            background: $light-green;
+        }
+    }
+
+    // .card__list__wrapper {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+}
+
+.craft__content {
+    .section-heading {
+        margin-bottom: 5rem;
+    }
+
+    .values-grid {
+        display: grid;
+        grid-template-columns: 1fr; // mobile default
+        gap: 2rem;
+
+        @media (min-width: $breakpoint-mobile) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        .value-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .letter-box {
+                width: 100%;
+                height: 120px;
+                background: $dark-green;
+                border-radius: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 4rem;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-6px);
+                }
+            }
+
+            .card {
+                background: #eaf5dc;
+                border-radius: 16px;
+                padding: 2rem;
+                text-align: center;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                border: 0;
+
+                h4 {
+                    margin-bottom: 0.5rem;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                &:hover {
+                    transform: translateY(-6px);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+                }
+            }
+
+            .connector {
+                height: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .connector span {
+                width: 6px;
+                height: 6px;
+                background: #000;
+                border-radius: 50%;
+            }
+
+            .connector::before {
+                content: "";
+                width: 1px;
+                height: 26px;
+                border-left: 2px dashed #eaf5dc;
+            }
+        }
+    }
+}
+
+.clarity__content {
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 9999;
+
+        .section-heading {
+            margin-bottom: 5rem;
+        }
+
+        // .clarity__wrapper {
+        //     width: 80%;
+        //     margin: 0 auto;
+
+        //     @media(max-width:$breakpoint-mobile) {
+        //         width: 100%;
+        //     }
+
+        //     .section-heading {
+        //         margin-bottom: 5rem;
+        //     }
+
+        //     .card__list__wrapper {
+        //         grid-template-columns: repeat(1, 1fr);
+
+        //         .card__list {
+        //             background: rgba(255, 255, 255, 0.1);
+        //             backdrop-filter: blur(15px);
+        //             -webkit-backdrop-filter: blur(12px);
+        //             border: 1px solid rgba(255, 255, 255, 0.25);
+        //         }
+        //     }
+        // }
+    }
+
+
+}
+
+.serve__content {
+    .audience__wrapper {
+        .card__list {
+            background-color: $light-green;
+        }
+    }
+}

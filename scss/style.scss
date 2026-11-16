@@ -1,0 +1,38 @@
+@import "bootstrap/bootstrap";
+
+/* Base */
+@import "frontend/base/variables";
+@import "frontend/base/typography";
+@import "frontend/base/color";
+@import "frontend/base/reset";
+@import "frontend/base/global";
+
+/* Layout */
+@import "frontend/layout/header";
+@import "frontend/layout/footer";
+@import "frontend/layout/bento";
+@import "frontend/layout/breadcrumb";
+
+/* Components */
+@import "frontend/components/button";
+@import "frontend/components/card";
+@import "frontend/components/form";
+
+/* Pages */
+@import "frontend/pages/contact";
+@import "frontend/pages/aboutus";
+@import "frontend/pages/career";
+
+/* Utilities */
+@import "frontend/utilities/swiper";
+@import "frontend/utilities/animation";
+@import "frontend/utilities/animation2";
+@import "frontend/utilities/animation3";
+
+@import "frontend/index/banner";
+@import "frontend/index/why_us";
+// @import "frontend/index/crafts";
+@import "frontend/index/craft-css";
+@import "frontend/index/projects";
+@import "frontend/index/blogs";
+@import "frontend/index/cta";

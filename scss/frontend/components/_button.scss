@@ -1,0 +1,130 @@
+.btn {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.btn_theme {
+    background: $theme_color2;
+    color: #fff;
+    font-family: $theme-font;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 2.4rem;
+    padding: 1.5rem 3.3rem;
+    text-transform: capitalize;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+        background: $theme_color1;
+        color: $white-color;
+        transition: all 500ms ease-in-out;
+    }
+}
+
+
+.before__icons {
+    li {
+        position: relative;
+        padding-left: 2.3rem;
+        transition: all 500ms ease-in-out;
+
+        &:before {
+            content: "\F135";
+            font-family: 'bootstrap-icons';
+            position: absolute;
+            left: 0;
+            top: -3px;
+            color: $theme_color1;
+        }
+
+        // &:hover {
+        //     a {
+        //         color: #777;
+        //         transition: all 500ms ease-in-out;
+        //     }
+
+        //     &:before {
+        //         color: $theme_color2;
+        //         transition: all 500ms ease-in-out;
+        //     }
+
+        // }
+    }
+}
+
+
+.styled__tab {
+
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link {
+        background-color: $theme_color1;
+        border-color: transparent;
+
+        color: $white-color;
+
+    }
+
+    .nav-tabs .nav-link:hover {
+        border-color: transparent;
+        border-bottom: 1px solid $theme_color3;
+        color: $theme_color3;
+    }
+
+    .nav-tabs .nav-link {
+        background-color: $theme_color2;
+        color: $white-color;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 1rem 2rem;
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid #021E13;
+    }
+
+
+}
+
+.styled_pagination {
+    margin: 2rem 0rem;
+
+    ul {
+        gap: 1.5rem;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+
+        .page-link {
+            color: $theme_color3;
+            border: 1px solid #eee;
+            background-color: $theme_color1;
+            padding: 1rem 2rem;
+
+            &:hover {
+                background: $theme_color2;
+                color: $white_color;
+            }
+        }
+
+        a {
+            font-size: 1.4rem;
+        }
+
+        .page-link:focus {
+            background-color: $theme_color2;
+            color: $white_color;
+        }
+
+        .page-link.active,
+        .active>.page-link {
+
+            background-color: $theme_color2;
+            border-color: $theme_color2;
+            color: $white_color;
+        }
+    }
+}
+
+.modal {
+    z-index: 9999999;
+}

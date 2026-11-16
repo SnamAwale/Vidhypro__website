@@ -1,0 +1,55 @@
+.cta {
+    .container {
+        position: relative;
+
+        .tech-background {
+            border-radius: 2rem;
+        }
+    }
+
+    .cta__content {
+        padding: 5rem;
+        text-align: center;
+
+        @media(max-width:$breakpoint-mobile) {
+            text-align: left;
+            padding: 3rem;
+        }
+
+        h3 {
+            font-size: 4rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+
+            @media(max-width:$breakpoint-mobile) {
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            width: 65%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            color: $white-color;
+
+            @media(max-width:$breakpoint-mobile) {
+                width: initial;
+            }
+
+        }
+
+        .btn_theme {
+            font-size: 1.8rem;
+
+            @media(max-width:$breakpoint-mobile) {
+                font-size: 1.5rem;
+            }
+
+            &:hover {
+                background: $white-color;
+                color: $theme_color1;
+            }
+        }
+
+    }
+}

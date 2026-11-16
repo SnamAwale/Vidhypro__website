@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="fonts/bootstrap-icons/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    .hero,
+    .tech-lines,
+    .loop,
+    .stack-card {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      perspective: 1000px;
+      will-change: transform;
+    }
+  </style>
+
+  <body>
+    <header class="main__menu">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <a href="index.html">
+              <figure>
+                <img src="img/logo.svg" alt="" />
+              </figure>
+            </a>
+          </div>
+
+          <nav class="nav">
+            <ul class="nav-links">
+              <li><a href="about.html">About Us</a></li>
+
+              <li class="has-submenu">
+                <a href="project.html">Our Solution</a>
+                <ul class="submenu">
+                  <li><a href="sbs.html">Saral Banking Sewa</a></li>
+                  <li><a href="provhidy.html">Provhidy</a></li>
+                </ul>
+              </li>
+
+              <li><a href="career.html">Career</a></li>
+              <li><a href="blog-listing.html">Insights</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <button class="menu-toggle" aria-label="Open Menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-overlay"></div>
+
+    <aside class="mobile-nav">
+      <button class="close-btn" aria-label="Close Menu">✕</button>
+
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+
+        <li class="mobile-submenu">
+          <button class="submenu-toggle">Our Solution<span>+</span></button>
+          <ul class="submenu">
+            <li><a href="sbs.html">Saral Banking Sewa</a></li>
+            <li><a href="provhidy.html">Provhidy</a></li>
+          </ul>
+        </li>
+
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog-listing.html">Insights</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section class="video__banner hero">
+        <div class="tech-background">
+          <div class="glow-spot glow-spot-1"></div>
+          <div class="glow-spot glow-spot-2"></div>
+          <div class="grid-pattern"></div>
+          <div class="tech-lines">
+            <div class="h-line"></div>
+            <div class="h-line"></div>
+            <div class="h-line"></div>
+            <div class="v-line"></div>
+            <div class="v-line"></div>
+            <div class="v-line"></div>
+          </div>
+          <div class="loop-container loop-container-1">
+            <div class="loop loop-1"></div>
+            <div class="loop loop-2"></div>
+          </div>
+        </div>
+        <div class="hero__inner">
+          <h1 class="hero__title">
+            <span class="top__title">Crafting Impactful</span>
+            <div class="title__wrapper">
+              <span class="left__title">Digital </span>
+
+              <div class="hero__media">
+                <video autoplay muted loop playsinline>
+                  <source
+                    src="img/0_Target_Diagram_1920x1080.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <!-- <iframe
+                                        src="https://www.youtube.com/embed/5-zONX34yeg?autoplay=1&mute=1&loop=1&playlist=5-zONX34yeg&controls=0&showinfo=0&modestbranding=1&rel=0"
+                                        frameborder="0" allow="autoplay; encrypted-media; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe> -->
+              </div>
+              <span class="right__title"> Experiences</span>
+            </div>
+          </h1>
+        </div>
+      </section>
+      <section class="why-choose-us section-padding">
+        <div class="container">
+          <div class="intro__wrapper">
+            <div class="intro__info">
+              <div class="section-heading left">
+                <span class="tagline"><span class="line"></span> About Us</span>
+                <h2>
+                  We Design, We Code,<span class="gradient"> We Simplify.</span>
+                </h2>
+                <p class="paragraph">
+                  We craft technology to make your work feel simpler and your
+                  decisions more confident.
+                </p>
+                <span class="shape"></span>
+              </div>
+            </div>
+            <div class="intro__img">
+              <figure>
+                <img src="img/whychooseus.jpg" alt="" />
+              </figure>
+            </div>
+          </div>
+          <div class="intro__bottom">
+            <div class="bottom__info dot-border">
+              <h4>We remove complexity</h4>
+              <p>
+                Our interfaces and flows are designed to be instantly
+                understandable, not something you have to “figure out.”
+              </p>
+            </div>
+            <div class="bottom__info dot-border2">
+              <h4>We return confidence</h4>
+              <p>
+                From financial choices to daily operations, our products are
+                built to make decisions clearer and less stressful.
+              </p>
+            </div>
+            <div class="bottom__info">
+              <h4>We respect attention</h4>
+              <p>
+                Technology should not fight for your focus. It should free it,
+                so people can do real work, not wrestle with systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="craft-section section-padding">
+        <div class="tech-container">
+          <div class="scanner bar-1"></div>
+          <div class="scanner bar-2"></div>
+
+          <div class="node node-1"></div>
+          <div class="node node-2"></div>
+          <div class="node node-3"></div>
+        </div>
+        <div class="container">
+          <div class="section-heading center">
+            <span class="tagline"><span class="dot"></span> What We Do</span>
+            <h2>
+              Crafts, <br />Our Strategic
+              <span class="gradient">Framework</span>
+            </h2>
+            <p class="paragraph">
+              CRAFTS is the strategic blueprint behind how we design, build, and
+              deliver every VIDHYPRO product.
+            </p>
+            <!-- <span class="shape"></span> -->
+          </div>
+          <div class="stack-wrapper">
+            <div id="card-1" class="stack-card">
+              <h3><span class="gradient">C</span> - Clarity</h3>
+              <div class="stacking__content">
+                <p>
+                  We design products that make sense instantly. No noise, no
+                  confusion, no friction. If it isn’t clear, it isn’t VIDHYPRO.
+                </p>
+              </div>
+            </div>
+            <div id="card-2" class="stack-card">
+              <h3><span class="gradient">R</span> - Reliability</h3>
+              <div class="stacking__content">
+                <p>
+                  Our strategy begins with stability. Systems must work
+                  consistently, securely, and predictably. Every time, for
+                  everyone.
+                </p>
+              </div>
+            </div>
+            <div id="card-3" class="stack-card">
+              <div class="stacking__card">
+                <h3><span class="gradient">A</span> - Accuracy</h3>
+                <div class="stacking__content">
+                  <p>
+                    Precision guides our decisions. Every data point, every
+                    flow, every interaction is deliberate, dependable, and
+                    meticulously crafted.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="card-4" class="stack-card">
+              <h3><span class="gradient">F</span> - Focus</h3>
+              <div class="stacking__content">
+                <p>
+                  We build what matters. No clutter, no unnecessary features —
+                  only purposeful, high-impact solutions that solve real
+                  problems for Nepali businesses.
+                </p>
+              </div>
+            </div>
+            <div id="card-5" class="stack-card">
+              <h3><span class="gradient">T</span>- Transparency</h3>
+              <div class="stacking__content">
+                <p>
+                  Trust is our operating baseline. We communicate openly, design
+                  responsibly, and handle data with honesty and respect.
+                </p>
+              </div>
+            </div>
+            <div id="card-6" class="stack-card">
+              <h3><span class="gradient">S</span> - Simplicity</h3>
+              <div class="stacking__content">
+                <p>
+                  Progress means reducing effort. We streamline processes,
+                  interfaces, and decisions so users feel empowered, not
+                  overwhelmed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our__projects section-padding">
+        <!-- <div class="overlay"></div> -->
+        <div class="container">
+          <div class="section-heading left">
+            <span class="tagline"
+              ><span class="line"></span> Let’s Work Together</span
+            >
+            <h2>
+              Let’s Build<br />Something <span class="gradient">Great</span>
+            </h2>
+            <p class="paragraph">
+              We are formed with the goal to assist enterprises to achieve
+              sustainable growth and efficiency.
+            </p>
+            <span class="shape"></span>
+          </div>
+
+          <div class="project_wrapper">
+            <div>
+              <a href="">
+                <div class="styled__listing">
+                  <figure>
+                    <img src="img/b3.webp" alt="" />
+                    <div class="overlay-content">
+                      <p>SBS</p>
+                      <h4>Saral Banking Sewa</h4>
+                    </div>
+                  </figure>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <div class="styled__listing">
+                  <figure>
+                    <img src="img/b4.webp" alt="" />
+                    <div class="overlay-content">
+                      <p>ERP</p>
+                      <h4>Providhy</h4>
+                    </div>
+                  </figure>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-blogs section-padding blog__listing">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="tagline"><span class="dot"></span> INSIGHTS</span>
+            <h2>
+              Ideas.<br />That Shape Better
+              <span class="gradient">Decisions</span>
+            </h2>
+            <p class="paragraph">
+              Explore thoughtful insights, industry trends, and expert
+              perspectives that help you think clearly, plan smarter, and stay
+              ahead in a fast-moving digital world.
+            </p>
+            <span class="shape"></span>
+          </div>
+          <div class="swiper blogs__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="blog-card">
+                  <div class="blog-media">
+                    <img src="img/b1.webp" alt="" />
+                  </div>
+
+                  <div class="blog-body">
+                    <span class="category">Dec 19 2025</span>
+                    <h4>
+                      Design Systems That Scale How to build consistent Design
+                      Systems That Scale How to build consistent
+                    </h4>
+                    <p>
+                      How to build consistent, flexible design systems that grow
+                      with your product. How to build consistent, flexible
+                      design systems that grow with your product.
+                    </p>
+                    <a href="#" class="read-more">See More →</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="blog-card">
+                  <div class="blog-media">
+                    <img src="img/b3.webp" alt="" />
+                  </div>
+
+                  <div class="blog-body">
+                    <span class="category">Dec 19 2025</span>
+                    <h4>Design Systems That Scale</h4>
+                    <p>
+                      How to build consistent, flexible design systems that grow
+                      with your product.
+                    </p>
+                    <a href="#" class="read-more">See More →</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="blog-card">
+                  <div class="blog-media">
+                    <img src="img/b4.webp" alt="" />
+                  </div>
+
+                  <div class="blog-body">
+                    <span class="category">Dec 19 2025</span>
+                    <h4>Design Systems That Scale</h4>
+                    <p>
+                      How to build consistent, flexible design systems that grow
+                      with your product.
+                    </p>
+                    <a href="#" class="read-more">See More →</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta section-padding">
+        <div class="container">
+          <div class="tech-background">
+            <div class="glow-spot glow-spot-1"></div>
+            <div class="glow-spot glow-spot-2"></div>
+            <div class="grid-pattern"></div>
+            <div class="tech-lines">
+              <div class="h-line"></div>
+              <div class="h-line"></div>
+              <div class="h-line"></div>
+              <div class="v-line"></div>
+              <div class="v-line"></div>
+              <div class="v-line"></div>
+            </div>
+            <div class="loop-container loop-container-1">
+              <div class="loop loop-1"></div>
+              <div class="loop loop-2"></div>
+            </div>
+          </div>
+          <div class="cta__content">
+            <h3>Let's Get in Touch</h3>
+            <p class="paragraph">
+              We are easily reachable through email, phone, and WhatsApp,
+              striving to provide convenient and seamless communication options
+              tailored to your needs.
+            </p>
+            <a href="#" class="btn btn_theme">contact-us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <figure>
+              <img src="img/logo_white.svg" alt="logo" />
+            </figure>
+          </div>
+          <div class="divider-border"></div>
+          <div class="follow_us">
+            <div class="social_icons facebook">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="social_icons instagram">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div class="social_icons whatsapp">
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            <div class="social_icons twitter">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <div class="row">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+              <div class="footer__link">
+                <h4>Company</h4>
+                <ul class="list-unstyled before__icons">
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Our Projects</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+              <div class="footer__link">
+                <h4>Projects</h4>
+                <ul class="list-unstyled before__icons">
+                  <li><a href="">Saral Banking Sewa</a></li>
+                  <li><a href="">Providhy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+              <div class="footer__link">
+                <h4>Resources</h4>
+                <ul class="list-unstyled before__icons">
+                  <li><a href="">Blogs</a></li>
+                  <li><a href="">Case Studies</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+              <div class="footer__link quick__contact">
+                <h4>Resources</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-geo-fill"></i>
+                    <div class="info_box">
+                      <h4>Find Us</h4>
+                      <p>Pulchowk, Lalitpur.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="bi bi-telephone-fill"></i>
+                    <div class="info_box">
+                      <h4>Call Us</h4>
+                      <p>+977-01-5269107</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="bi bi-envelope-fill"></i>
+                    <div class="info_box">
+                      <h4>Mail Us</h4>
+                      <p>info@vidhypro.com</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider-border"></div>
+        <div class="footer__bottom">
+          <p>Company of F1soft Group</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="go-top">
+      <i class="bi bi-chevron-up"></i>
+    </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/swiper/swiper.min.js"></script>
+
+    <script src="js/gsap/gsap.min.js"></script>
+    <script src="js/gsap/ScrollTrigger.min.js"></script>
+    <script src="js/gsap/ScrollSmoother.min.js"></script>
+    <script src="js/gsap/script.js"></script>
+
+    <script src="js/custom.js"></script>
+  </body>
+</html>

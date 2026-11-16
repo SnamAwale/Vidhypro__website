@@ -1,0 +1,161 @@
+.styled-faq {
+
+    .accordion {
+        width: 80%;
+        margin: 0 auto;
+
+        @media(max-width:$breakpoint-mobile) {
+            width: 100%;
+        }
+
+
+        .accordion-button {
+            font-size: 1.6rem;
+            color: $theme_color1;
+            font-weight: 600;
+            padding: 2rem;
+            border-radius: 1rem !important;
+
+
+            &::after {
+                background-image: initial;
+                content: "\F4FE";
+                font-family: "bootstrap-icons";
+                font-size: 20px;
+                height: initial;
+                background-color: $theme-color1;
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                border-radius: 50%;
+                color: $white-color;
+            }
+
+
+        }
+
+        .accordion-item {
+            margin-bottom: 2rem;
+            border-radius: 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        button.accordion-button.collapsed {
+            gap: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: $theme_color1;
+            color: $white-color;
+            border-radius: 1rem !important;
+            border-bottom-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+
+            &::after {
+                content: "\F2EA";
+                font-size: 20px;
+                font-family: "bootstrap-icons";
+            }
+        }
+
+        .accordion-body {
+            background-color: #F9FAFF;
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 1rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(12px);
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .accordion-button:focus {
+            outline: 0;
+            box-shadow: initial;
+        }
+    }
+
+
+
+}
+
+.acc {
+    .accordion {
+        --bs-accordion-border-color: #fff;
+        background-color: #fff;
+        border-radius: 0.8rem;
+
+        .accordion-item {
+            margin-bottom: 5rem;
+        }
+
+        button.accordion-button.collapsed {
+            border: 1px solid #eaeaea;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.4rem;
+            gap: 1.5rem;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background: linear-gradient(90deg, rgba(30, 37, 94, 0.8156512605042017) 0%, rgba(30, 37, 94, 0.6896008403361344) 49%, rgba(228, 61, 94, 0.633578431372549) 100%);
+            box-shadow: initial;
+            padding: 1.5rem;
+            border-radius: 0.4rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .accordion-button:focus {
+            border-color: initial;
+            box-shadow: initial;
+        }
+
+        .accordion-body {
+            background-color: #F9FAFF;
+            border: 1px solid #eaeaea;
+            border-radius: 0.4rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        button.accordion-button {}
+
+
+    }
+
+    .accordion-button::after {
+        background-image: initial;
+        content: "\F4FE";
+        font-family: "bootstrap-icons";
+        font-size: 20px;
+        height: initial;
+        background-color: $theme-color2;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        border-radius: 50%;
+        color: $white-color;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        content: "\F2EA";
+        font-size: 20px;
+        font-family: "bootstrap-icons";
+    }
+}

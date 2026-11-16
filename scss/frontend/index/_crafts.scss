@@ -1,0 +1,86 @@
+.craft-section {
+    position: relative;
+    background-color: #bec0ae;
+    overflow: visible;
+
+    .section-heading {
+        margin-bottom: 5rem;
+
+    }
+
+    .container {
+        position: relative;
+        z-index: 999;
+
+        .stack-wrapper {
+            position: relative;
+            width: 75%;
+            margin: 0 auto;
+
+            @media(max-width:$breakpoint-mobile) {
+                width: 100%;
+            }
+
+        }
+
+        .stack-card {
+            position: relative;
+            z-index: 1;
+            position: relative;
+            width: 100%;
+            padding: 2.5rem;
+            border-radius: 0.8rem;
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            margin-bottom: 3rem;
+
+
+            h3 {
+                font-size: 2.8rem;
+                color: $theme_color1;
+                margin-bottom: 1rem;
+
+                .gradient {
+                    background: $grad;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 700;
+                }
+            }
+
+            p {
+                color: #555;
+            }
+
+        }
+
+    }
+
+}
+
+
+#card-1 {
+    z-index: 10;
+}
+
+#card-2 {
+    z-index: 20;
+}
+
+#card-3 {
+    z-index: 30;
+}
+
+#card-4 {
+    z-index: 40;
+}
+
+#card-5 {
+    z-index: 50;
+}
+
+#card-6 {
+    z-index: 60;
+}

@@ -1,0 +1,108 @@
+.our__projects {
+    position: relative;
+
+    .overlay {
+        background: $grad;
+        filter: blur(100px);
+        opacity: 0.2;
+    }
+
+    .container {
+        position: relative;
+        z-index: 999;
+    }
+
+    .section-heading {
+        margin-bottom: 5rem;
+    }
+
+    .project_wrapper {
+        display: flex;
+        gap: 5rem;
+
+        @media(max-width:$breakpoint-mobile) {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+}
+
+
+.styled__listing {
+    position: relative;
+    display: block;
+
+    &:hover {
+        figure {
+            &::before {
+                opacity: 1;
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+            }
+
+            .overlay-content {
+                -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+            }
+        }
+    }
+
+    figure {
+        position: relative;
+        display: block;
+        border-radius: 0.8rem;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            content: "";
+            background-color: #ffffff7d;
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .overlay-content {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+            z-index: 1;
+
+            p {
+                position: relative;
+                display: inline-block;
+                color: $white_color;
+                background: $theme_color2;
+                padding: 0.3rem 1.5rem;
+                border-top-left-radius: 0.8rem;
+                border-top-right-radius: 0.8rem;
+                margin: 0;
+            }
+
+            h4 {
+                position: relative;
+                display: block;
+                background-color: $theme_color1;
+                border-top-right-radius: 0.8rem;
+                padding: 1rem;
+                color: $white-color;
+            }
+        }
+    }
+}

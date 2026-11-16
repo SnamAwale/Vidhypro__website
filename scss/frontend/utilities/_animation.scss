@@ -1,0 +1,560 @@
+/* Core Background Container */
+.tech-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at 50% 50%, #041a0a 0%, #021206 50%, #03240e 100%);
+    // background: radial-gradient(ellipse at 50% 50%, #052719 0%, #06311b 50%, #0b4f2c 100%);
+    z-index: -1;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+/* Grid Pattern Overlay */
+.grid-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 1;
+}
+
+/* Tech Lines Container */
+.tech-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Horizontal Flowing Lines */
+.h-line {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #10b981 50%, transparent 100%);
+    opacity: 0;
+    animation: flowHorizontal 8s ease-in-out infinite;
+}
+
+.h-line:nth-child(1) {
+    top: 15%;
+    width: 30%;
+    left: -30%;
+    animation-delay: 0s;
+}
+
+.h-line:nth-child(2) {
+    top: 35%;
+    width: 25%;
+    left: -25%;
+    animation-delay: 2s;
+}
+
+.h-line:nth-child(3) {
+    top: 55%;
+    width: 35%;
+    left: -35%;
+    animation-delay: 4s;
+}
+
+.h-line:nth-child(4) {
+    top: 75%;
+    width: 28%;
+    left: -28%;
+    animation-delay: 1s;
+}
+
+.h-line:nth-child(5) {
+    top: 25%;
+    width: 22%;
+    right: -22%;
+    animation-delay: 3s;
+    animation-name: flowHorizontalReverse;
+}
+
+.h-line:nth-child(6) {
+    top: 65%;
+    width: 32%;
+    right: -32%;
+    animation-delay: 5s;
+    animation-name: flowHorizontalReverse;
+}
+
+/* Vertical Flowing Lines */
+.v-line {
+    position: absolute;
+    width: 1px;
+    background: linear-gradient(180deg, transparent 0%, #4ade80 50%, transparent 100%);
+    opacity: 0;
+    animation: flowVertical 10s ease-in-out infinite;
+}
+
+.v-line:nth-child(1) {
+    left: 10%;
+    height: 25%;
+    top: -25%;
+    animation-delay: 0s;
+}
+
+.v-line:nth-child(2) {
+    left: 30%;
+    height: 30%;
+    top: -30%;
+    animation-delay: 2.5s;
+}
+
+.v-line:nth-child(3) {
+    left: 50%;
+    height: 20%;
+    top: -20%;
+    animation-delay: 5s;
+}
+
+.v-line:nth-child(4) {
+    left: 70%;
+    height: 28%;
+    top: -28%;
+    animation-delay: 1.5s;
+}
+
+.v-line:nth-child(5) {
+    left: 90%;
+    height: 22%;
+    top: -22%;
+    animation-delay: 3.5s;
+}
+
+.v-line:nth-child(6) {
+    left: 20%;
+    height: 26%;
+    bottom: -26%;
+    animation-delay: 4s;
+    animation-name: flowVerticalReverse;
+}
+
+.v-line:nth-child(7) {
+    left: 60%;
+    height: 32%;
+    bottom: -32%;
+    animation-delay: 6s;
+    animation-name: flowVerticalReverse;
+}
+
+.v-line:nth-child(8) {
+    left: 80%;
+    height: 24%;
+    bottom: -24%;
+    animation-delay: 2s;
+    animation-name: flowVerticalReverse;
+}
+
+/* Rotating Loops */
+.loop-container {
+    position: absolute;
+    z-index: 3;
+}
+
+.loop {
+    border: 1px solid rgba(74, 222, 128, 0.15);
+    border-radius: 50%;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.loop-container-1 {
+    top: 10%;
+    right: 15%;
+}
+
+.loop-container-1 .loop-1 {
+    width: 120px;
+    height: 120px;
+    border-color: rgba(74, 222, 128, 0.2);
+    animation: rotateLoop 25s linear infinite;
+}
+
+.loop-container-1 .loop-2 {
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+    border-color: rgba(16, 185, 129, 0.7);
+    border-style: dashed;
+    animation: rotateLoop 18s linear infinite reverse;
+}
+
+.loop-container-1 .loop-3 {
+    width: 40px;
+    height: 40px;
+    top: 40px;
+    left: 40px;
+    border-color: rgba(74, 222, 128, 0.3);
+    animation: rotateLoop 12s linear infinite;
+}
+
+.loop-container-2 {
+    bottom: 20%;
+    left: 10%;
+}
+
+.loop-container-2 .loop-1 {
+    width: 150px;
+    height: 150px;
+    border-color: rgba(16, 185, 129, 0.08);
+    animation: rotateLoop 30s linear infinite reverse;
+}
+
+.loop-container-2 .loop-2 {
+    width: 100px;
+    height: 100px;
+    top: 25px;
+    left: 25px;
+    border-color: rgba(74, 222, 128, 0.15);
+    border-style: dotted;
+    animation: rotateLoop 20s linear infinite;
+}
+
+.loop-container-2 .loop-3 {
+    width: 50px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+    border-color: rgba(16, 185, 129, 0.25);
+    animation: rotateLoop 15s linear infinite reverse;
+}
+
+.loop-container-3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loop-container-3 .loop-1 {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+    border-color: rgba(74, 222, 128, 0.05);
+    animation: pulseLoop 8s ease-in-out infinite;
+}
+
+.loop-container-3 .loop-2 {
+    width: 140px;
+    height: 140px;
+    margin-left: -70px;
+    margin-top: -70px;
+    border-color: rgba(16, 185, 129, 0.08);
+    animation: pulseLoop 8s ease-in-out infinite 0.5s;
+}
+
+.loop-container-3 .loop-3 {
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    border-color: rgba(74, 222, 128, 0.12);
+    animation: pulseLoop 8s ease-in-out infinite 1s;
+}
+
+/* Floating Nodes */
+.node {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #4ade80;
+    border-radius: 50%;
+    opacity: 0;
+    animation: nodeFloat 6s ease-in-out infinite;
+}
+
+.node::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    border-radius: 50%;
+    top: -8px;
+    left: -8px;
+    animation: nodePulse 2s ease-in-out infinite;
+}
+
+.node:nth-child(1) {
+    top: 20%;
+    left: 25%;
+    animation-delay: 0s;
+}
+
+.node:nth-child(2) {
+    top: 40%;
+    left: 75%;
+    animation-delay: 1s;
+}
+
+.node:nth-child(3) {
+    top: 60%;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.node:nth-child(4) {
+    top: 80%;
+    left: 60%;
+    animation-delay: 3s;
+}
+
+.node:nth-child(5) {
+    top: 30%;
+    left: 85%;
+    animation-delay: 4s;
+}
+
+.node:nth-child(6) {
+    top: 70%;
+    left: 40%;
+    animation-delay: 5s;
+}
+
+/* Corner Brackets */
+.corner-bracket {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-color: rgba(16, 185, 129, 0.2);
+    border-style: solid;
+    border-width: 0;
+    z-index: 4;
+}
+
+.corner-bracket.top-left {
+    top: 40px;
+    left: 40px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    animation: cornerPulse 4s ease-in-out infinite;
+}
+
+.corner-bracket.top-right {
+    top: 40px;
+    right: 40px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    animation: cornerPulse 4s ease-in-out infinite 1s;
+}
+
+.corner-bracket.bottom-left {
+    bottom: 40px;
+    left: 40px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    animation: cornerPulse 4s ease-in-out infinite 2s;
+}
+
+.corner-bracket.bottom-right {
+    bottom: 40px;
+    right: 40px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    animation: cornerPulse 4s ease-in-out infinite 3s;
+}
+
+/* Subtle Glow Spots */
+.glow-spot {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.glow-spot-1 {
+    width: 400px;
+    height: 400px;
+    background: #10b981;
+    top: -100px;
+    right: -100px;
+    animation: glowPulse 10s ease-in-out infinite;
+}
+
+.glow-spot-2 {
+    width: 300px;
+    height: 300px;
+    background: #4ade80;
+    bottom: -50px;
+    left: -50px;
+    animation: glowPulse 12s ease-in-out infinite 2s;
+}
+
+/* Keyframe Animations */
+@keyframes flowHorizontal {
+    0% {
+        left: -30%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.6;
+    }
+
+    100% {
+        left: 130%;
+        opacity: 0;
+    }
+}
+
+@keyframes flowHorizontalReverse {
+    0% {
+        right: -30%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.6;
+    }
+
+    100% {
+        right: 130%;
+        opacity: 0;
+    }
+}
+
+@keyframes flowVertical {
+    0% {
+        top: -30%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.5;
+    }
+
+    90% {
+        opacity: 0.5;
+    }
+
+    100% {
+        top: 130%;
+        opacity: 0;
+    }
+}
+
+@keyframes flowVerticalReverse {
+    0% {
+        bottom: -30%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.5;
+    }
+
+    90% {
+        opacity: 0.5;
+    }
+
+    100% {
+        bottom: 130%;
+        opacity: 0;
+    }
+}
+
+@keyframes rotateLoop {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulseLoop {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+@keyframes nodeFloat {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    20%,
+    80% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes nodePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes cornerPulse {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        opacity: 0.1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(1.1);
+    }
+}

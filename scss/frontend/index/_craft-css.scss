@@ -1,0 +1,104 @@
+:root {
+    --stack-offset: 75px;
+    /* Space reserved for each header */
+    --base-top: 100px;
+    /* Distance from top for the first card */
+}
+
+.craft-section {
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+
+    .overlay {
+        opacity: 0.7;
+        background: $white-color;
+        filter: blur(100px);
+    }
+
+    .section-heading {
+        margin-bottom: 5rem;
+
+    }
+
+    .container {
+        position: relative;
+        z-index: 999;
+
+        .stack-wrapper {
+            position: relative;
+            // padding-bottom: 10vh;
+            width: 75%;
+            margin: 0 auto;
+
+            @media(max-width:$breakpoint-mobile) {
+                width: 100%;
+            }
+
+        }
+
+        .stack-card {
+            position: sticky;
+            width: 100%;
+            height: auto;
+            padding: 2.5rem;
+            border-radius: 0.8rem;
+
+            margin-bottom: 3rem;
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+
+            h3 {
+                font-size: 2.8rem;
+                color: $theme_color1;
+                margin-bottom: 1rem;
+
+                .gradient {
+                    background: $grad;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 700;
+                }
+            }
+
+            p {
+                color: #555;
+            }
+
+        }
+
+    }
+
+}
+
+#card-1 {
+    top: var(--base-top);
+
+}
+
+#card-2 {
+    top: calc(var(--base-top) + (var(--stack-offset) * 1));
+
+}
+
+#card-3 {
+    top: calc(var(--base-top) + (var(--stack-offset) * 2));
+
+}
+
+#card-4 {
+    top: calc(var(--base-top) + (var(--stack-offset) * 3));
+
+}
+
+#card-5 {
+    top: calc(var(--base-top) + (var(--stack-offset) * 4));
+
+}
+
+#card-6 {
+    top: calc(var(--base-top) + (var(--stack-offset) * 5));
+
+}

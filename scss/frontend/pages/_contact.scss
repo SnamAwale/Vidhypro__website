@@ -1,0 +1,113 @@
+.contact-section {
+    .contact__wrapper {
+        display: flex;
+        gap: 3rem;
+        align-items: stretch;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+
+        .contact-content {
+            flex: 1.5;
+
+            ul {
+                margin-top: 2rem;
+                display: flex;
+                gap: 1rem;
+                flex-direction: column;
+
+
+                li {
+                    display: flex;
+                    gap: 1rem;
+
+                    i {
+                        background-color: $theme_color1;
+                        border: 1px solid #d3d3d3;
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $theme_color3;
+                    }
+                }
+            }
+        }
+
+        .contact_form {
+            flex: 1;
+            border-radius: 2rem;
+            padding: 4rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+            }
+
+            .form-group {
+                position: relative;
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 1rem 1.5rem;
+                    border-radius: 0.8rem;
+                    border: 1px solid rgba(0, 0, 0, 0.08);
+                    background: rgba(255, 255, 255, 0.85);
+                    font-size: 1.4rem;
+                    color: #111;
+                    transition: all 0.25s ease;
+
+                    &::placeholder {
+                        color: #777;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        border-color: $grad;
+                        box-shadow: 0 0 0 4px rgba(0, 180, 120, 0.15);
+                        background: #fff;
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                }
+            }
+
+            .form-btn {
+                margin-top: 1rem;
+                padding: 1rem 1.4rem;
+                border-radius: 14px;
+                border: none;
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: #fff;
+                cursor: pointer;
+                background: $grad;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-2px);
+                }
+
+                &:active {
+                    transform: translateY(0);
+                    box-shadow: 0 8px 20px rgba(0, 124, 240, 0.3);
+                }
+            }
+
+        }
+    }
+
+
+
+
+
+
+}
